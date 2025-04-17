@@ -17,7 +17,7 @@
 ### 策划组
 
 - 负责人：ji233
-- 成员：风若轻雨、Ghastasaucey Amadeus Vermeil、ji233、清丰君、天盟琉璃、ueu4573
+- 成员：风若轻雨、Ghastasaucey Amadeus Vermeil、ji233、清丰君 qfj、天盟琉璃、ueu4573
 
 ### 美术组
 
@@ -27,7 +27,7 @@
 ### 音乐组
 
 - 负责人：_None_
-- 成员：贩剑的幻剑、究极无力猫、KinghJ、清丰君、仙主、塔瑗
+- 成员：贩剑的幻剑、究极无力猫、KinghJ、清丰君 qfj、仙主、塔瑗
 
 ### 剪辑组
 
