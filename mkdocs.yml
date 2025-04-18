@@ -37,7 +37,7 @@ markdown_extensions:
   - attr_list
   - mdx_truly_sane_lists
 
-copyright: Copyright &copy; 2025 植创社
+copyright: Copyright &copy; 2025 植创社 <br> <a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备2024119342号-2</a>
 
 nav:
   - 首页: index.md
