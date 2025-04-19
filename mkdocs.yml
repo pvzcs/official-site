@@ -42,7 +42,6 @@ copyright: Copyright &copy; 2025 植创社 <br> <a href="https://beian.miit.gov.
 nav:
   - 首页: index.md
   - 关于我们:
-      - 组织架构: about/structure.md
       - 人员: about/staff.md
       - 相关站点: about/sites.md
   - 作品:
