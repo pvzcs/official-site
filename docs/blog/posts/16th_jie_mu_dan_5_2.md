@@ -5,6 +5,7 @@ date: 2025-04-27T16:00:00
 slug: plants-vs-zombies-16th-anniversary-schedule-release-5-2
 authors:
   - zcs
+  - gk
   - doju
   - ji233
 ---

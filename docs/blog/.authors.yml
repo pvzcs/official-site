@@ -1,13 +1,17 @@
 authors:
   zcs:
     name: 植创社新闻社
-    description: 植创社新闻社
+    description: 新闻社
     avatar: ./blog/avatars/zcs.png
   ji233:
     name: ji233        # Author name
-    description: 植创社主催 # Author description
+    description: 主催 # Author description
     avatar: ./blog/avatars/ji233.png         # Author avatar
   doju:
     name: 豆君DoJu        # Author name
-    description: 植创社美术组成员 # Author description
+    description: 美术组成员 # Author description
     avatar: ./blog/avatars/doju.png         # Author avatar
+  gk:
+    name: 时空过客
+    description: 美术组成员
+    avatar: ./blog/avatars/gk.png
