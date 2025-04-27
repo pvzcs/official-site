@@ -32,12 +32,13 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-plugin:
-  - blog
 
 markdown_extensions:
   - attr_list
   - mdx_truly_sane_lists
+
+plugins:
+  - blog
 
 copyright: Copyright &copy; 2025 植创社 <br> <a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备2024119342号-2</a>
 
@@ -53,3 +54,5 @@ nav:
           - PvZ16周年庆典: works/16.md
   - 制度:
       - 社团活动章程: strategy/main.md
+  - 动态:
+      - blog/index.md

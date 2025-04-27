@@ -1,0 +1,6 @@
+authors:
+  ji233:
+    name: ji233        # Author name
+    description: 植创社主催 # Author description
+    avatar: ./blog/avatars/ji233.png         # Author avatar
+    url: https://github.com/ji233-Sun            # Author website URL
