@@ -32,6 +32,8 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
+plugin:
+  - blog
 
 markdown_extensions:
   - attr_list
@@ -51,4 +53,3 @@ nav:
           - PvZ16周年庆典: works/16.md
   - 制度:
       - 社团活动章程: strategy/main.md
-  - 加入我们: strategy/join-us.md
