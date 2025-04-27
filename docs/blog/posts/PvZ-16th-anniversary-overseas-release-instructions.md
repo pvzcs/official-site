@@ -1,6 +1,6 @@
 ---
 categories:
-  - 新闻
+  - 公告
 date: 2025-04-27T23:00:00
 slug: PvZ-16th-anniversary-overseas-release-instructions
 authors:
