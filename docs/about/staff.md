@@ -22,12 +22,12 @@
 ### 美术组
 
 - 负责人：白饭 BFAN
-- 成员：白饭 BFAN、豆君DoJu、吉吉、请假委员、熔萤、smzase、s阳光s、香橼、叶冰、Error博士、KevinMVZ、时空过客
+- 成员：白饭 BFAN、豆君DoJu、吉吉、请假委员、熔萤、smzase、s阳光s、香橼、叶冰、Error博士、KevinMVZ、时空过客、床单妖怪
 
 ### 音乐组
 
 - 负责人：_None_
-- 成员：贩剑的幻剑、究极无力猫、KinghJ、清丰君qfj、仙主、塔瑗、Dr・糕萌酸钾-Studio、自由三叶草
+- 成员：贩剑的幻剑、究极无力猫、KinghJ、清丰君qfj、仙主、塔瑗、Dr・糕萌酸钾-Studio、自由三叶草、一条蟒老师
 
 ### 剪辑组
 
