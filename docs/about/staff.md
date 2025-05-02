@@ -22,7 +22,7 @@
 ### 美术组
 
 - 负责人：白饭 BFAN
-- 成员：白饭 BFAN、豆君DoJu、吉吉、请假委员、熔萤、smzase、s阳光s、香橼、叶冰、Error博士、KevinMVZ、时空过客、床单妖怪
+- 成员：白饭 BFAN、豆君DoJu、吉吉、请假委员、熔萤、smzase、s阳光s、香橼、叶冰、Error博士、KevinMVZ、时空过客、床单妖怪、BetaBeast
 
 ### 音乐组
 
@@ -32,7 +32,7 @@
 ### 剪辑组
 
 - 负责人：_None_
-- 成员：Bayant白蚁、凉沈、smzase、UPU4U7、Winkle雪线、无名的叶子、YC、阿风、雨痕
+- 成员：Bayant白蚁、凉沈、smzase、UPU4U7、Winkle雪线、无名的叶子、YC、阿风、雨痕、BetaBeast
 
 ### 文案组
 
