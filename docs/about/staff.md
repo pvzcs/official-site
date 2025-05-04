@@ -22,7 +22,7 @@
 ### 美术组
 
 - 负责人：白饭BFAN
-- 成员：白饭BFAN、豆君DoJu、吉吉、请假委员、熔萤、smzase、s阳光s、香橼、叶冰、Error博士、KevinMVZ、时空过客、床单妖怪、BetaBeast
+- 成员：白饭BFAN、豆君DoJu、吉吉、请假委员、熔萤、smzase、s阳光s、香橼、叶冰、Error博士、KevinMVZ、时空过客、床单妖怪、BetaBeast、氯气
 
 ### 音乐组
 
