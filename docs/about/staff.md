@@ -7,10 +7,10 @@
 - 主催：ji233
 - 管理员：白饭BFAN、ji233、天盟琉璃
 
-### 人力资源组
+### 社群管理组
 
 - 负责人：ji233
-- 成员：ji233
+- 成员：ji233、白饭BFAN、豆君DoJu、道源君、Ghastasaucey Amadeus Vermeil、风若轻雨、请假委员、天盟琉璃
 
 ## 创作组
 
@@ -21,8 +21,8 @@
 
 ### 美术组
 
-- 负责人：白饭 BFAN
-- 成员：白饭 BFAN、豆君DoJu、吉吉、请假委员、熔萤、smzase、s阳光s、香橼、叶冰、Error博士、KevinMVZ、时空过客、床单妖怪、BetaBeast
+- 负责人：白饭BFAN
+- 成员：白饭BFAN、豆君DoJu、吉吉、请假委员、熔萤、smzase、s阳光s、香橼、叶冰、Error博士、KevinMVZ、时空过客、床单妖怪、BetaBeast
 
 ### 音乐组
 
