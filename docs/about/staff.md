@@ -10,7 +10,7 @@
 ### 社群管理组
 
 - 负责人：ji233
-- 成员：ji233、白饭BFAN、豆君DoJu、道源君、Ghastasaucey Amadeus Vermeil、风若轻雨、请假委员、天盟琉璃
+- 成员：ji233、白饭BFAN、豆君DoJu、道源君、Ghastasaucey Amadeus Vermeil、风若轻雨、请假委员、天盟琉璃、萌新迎风听雨（社外）、黑木钟（社外）
 
 ## 创作组
 
