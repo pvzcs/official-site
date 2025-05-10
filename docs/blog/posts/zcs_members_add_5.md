@@ -11,4 +11,4 @@ authors:
 
 - 美术组新增：床单妖怪、BetaBeast、氯气、逸辰
 - 音乐组新增：自由三叶草、一条蟒老师、649hdb、Promise.、HarK如沐春风的笑azY
-- 剪辑组新增：雨痕、BetaBeast
+- 剪辑组新增：雨痕、BetaBeast、咸威化

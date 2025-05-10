@@ -10,7 +10,7 @@
 ### 社群管理组
 
 - 负责人：ji233
-- 成员：ji233、白饭BFAN、豆君DoJu、道源君、Ghastasaucey Amadeus Vermeil、风若轻雨、请假委员、天盟琉璃、smzase、萌新迎风听雨（社外）、黑木钟（社外）、咸威化（社外）
+- 成员：ji233、白饭BFAN、豆君DoJu、道源君、Ghastasaucey Amadeus Vermeil、风若轻雨、请假委员、天盟琉璃、smzase、咸威化、萌新迎风听雨（社外）、黑木钟（社外）、某个Tony（社外）
 
 ## 创作组
 
@@ -32,7 +32,7 @@
 ### 剪辑组
 
 - 负责人：_None_
-- 成员：Bayant白蚁、凉沈、smzase、UPU4U7、Winkle雪线、无名的叶子、YC、阿风、雨痕、BetaBeast
+- 成员：Bayant白蚁、凉沈、smzase、UPU4U7、Winkle雪线、无名的叶子、YC、阿风、雨痕、BetaBeast、咸威化
 
 ### 文案组
 
