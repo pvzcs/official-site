@@ -32,7 +32,7 @@
 ### 剪辑组
 
 - 负责人：_None_
-- 成员：Bayant白蚁、凉沈、smzase、UPU4U7、Winkle雪线、无名的叶子、YC、阿风、雨痕、BetaBeast、咸威化
+- 成员：Bayant白蚁、凉沈、smzase、UPU4U7、Winkle雪线、无名的叶子、YC、阿风、雨痕、BetaBeast、咸威化、磁君
 
 ### 文案组
 
