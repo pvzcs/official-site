@@ -17,7 +17,7 @@
 ### 策划组
 
 - 负责人：ji233
-- 成员：风若轻雨、Ghastasaucey Amadeus Vermeil、ji233、清丰君qfj、天盟琉璃、ueu4573
+- 成员：风若轻雨、Ghastasaucey Amadeus Vermeil、ji233、清丰君qfj、天盟琉璃、ueu4573、YC
 
 ### 美术组
 
