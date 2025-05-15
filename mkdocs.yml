@@ -35,7 +35,7 @@ theme:
 
 markdown_extensions:
   - attr_list
-  - mdx_truly_sane_lists
+  - def_list
 
 plugins:
   - blog
