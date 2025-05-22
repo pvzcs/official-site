@@ -27,7 +27,7 @@
 ### 音乐组
 
 - 负责人：_None_
-- 成员：贩剑的幻剑、究极无力猫、KinghJ、清丰君qfj、仙主、塔瑗、Dr・糕萌酸钾-Studio、自由三叶草、一条蟒老师、649hdb、Promise.、HarK如沐春风的笑azY、夜暮青
+- 成员：贩剑的幻剑、究极无力猫、KinghJ、清丰君qfj、仙主、塔瑗、Dr・糕萌酸钾-Studio、自由三叶草、一条蟒老师、649hdb、Promise.、HarK如沐春风的笑azY、夜暮青、west-钢琴酱
 
 ### 剪辑组
 
