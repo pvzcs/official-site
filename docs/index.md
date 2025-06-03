@@ -1,6 +1,6 @@
 # 首页
 
-<center>![Our Logo](images/logo.png){ width=128 height=128 }</center>
+<center><img src="./images/logo.png" width=128 height=128></center>
 
 <center><small>植创社成立于 2025 年 3 月 3 日</small></center>
 
