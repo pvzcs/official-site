@@ -27,12 +27,12 @@
 ### 音乐组
 
 - 负责人：_None_
-- 成员：贩剑的幻剑、究极无力猫、KinghJ、清丰君qfj、仙主、塔瑗、Dr・糕萌酸钾-Studio、自由三叶草、一条蟒老师、649hdb、Promise.、HarK如沐春风的笑azY、夜暮青、west-钢琴酱
+- 成员：贩剑的幻剑、究极无力猫、KinghJ、清丰君qfj、仙主、塔瑗、Dr・糕萌酸钾-Studio、自由三叶草、一条蟒老师、649hdb、Promise.、HarK如沐春风的笑azY、夜暮青、west-钢琴酱、CW狂风
 
 ### 剪辑组
 
 - 负责人：_None_
-- 成员：Bayant白蚁、凉沈、smzase、UPU4U7、Winkle雪线、无名的叶子、YC、阿风、雨痕、BetaBeast、咸威化、磁君
+- 成员：Bayant白蚁、凉沈、smzase、UPU4U7、Winkle雪线、无名的叶子、YC、阿风、雨痕、BetaBeast、咸威化、磁君、CW狂风
 
 ### 文案组
 
