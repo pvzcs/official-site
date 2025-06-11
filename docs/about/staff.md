@@ -17,12 +17,12 @@
 ### 策划组
 
 - 负责人：ji233
-- 成员：风若轻雨、Ghastasaucey Amadeus Vermeil、ji233、清丰君qfj、天盟琉璃、ueu4573、YC
+- 成员：风若轻雨、ji233、YC
 
 ### 美术组
 
 - 负责人：白饭BFAN
-- 成员：白饭BFAN、豆君DoJu、吉吉、请假委员、熔萤、smzase、s阳光s、香橼、叶冰、Error博士、KevinMVZ、时空过客、床单妖怪、BetaBeast、氯气、逸辰、Yinshou83、寒瑞
+- 成员：白饭BFAN、豆君DoJu、吉吉、请假委员、熔萤、smzase、s阳光s、香橼、叶冰、Error博士、KevinMVZ、时空过客、床单妖怪、BetaBeast、氯气、逸辰、Yinshou83、寒瑞、摆烂の布嘟嘟、这是一个很好的新昵称
 
 ### 音乐组
 
@@ -37,7 +37,7 @@
 ### 文案组
 
 - 负责人：_None_
-- 成员：星苗织光、这是一杯热红茶
+- 成员：星苗织光、这是一杯热红茶、清丰君qfj
 
 ### 外宣组
 
