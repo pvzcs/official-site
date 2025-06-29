@@ -17,7 +17,7 @@
 ### 策划组
 
 - 负责人：ji233
-- 成员：风若轻雨、ji233、YC
+- 成员：风若轻雨、ji233、YC、Ralsei-Toe
 
 ### 美术组
 
@@ -32,7 +32,7 @@
 ### 剪辑组
 
 - 负责人：_None_
-- 成员：Bayant白蚁、凉沈、smzase、UPU4U7、Winkle雪线、无名的路人_、YC、阿风、雨痕、BetaBeast、咸威化、磁君、CW狂风、发感觉怪怪、蛾、萌萌哒小春卷
+- 成员：Bayant白蚁、凉沈、smzase、UPU4U7、Winkle雪线、无名的路人_、YC、阿风、雨痕、BetaBeast、咸威化、磁君、CW狂风、发感觉怪怪、蛾、萌萌哒小春卷、KH-Dihun、氯气
 
 ### 文案组
 
