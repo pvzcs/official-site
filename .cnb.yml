@@ -7,4 +7,4 @@ main:
           script: npm install -g pnpm && pnpm i && pnpm run docs:build
         - name: 部署到Pages
           image: node:20
-          script: npx edgeone pages deploy ./.vitepress/dist --name img-w3c-cool --token $EDGEONE_PAGES_API_TOKEN
+          script: npx edgeone pages deploy ./.vitepress/dist --name zcs-site --token $EDGEONE_PAGES_API_TOKEN
