@@ -1,0 +1,10 @@
+main:
+  push:
+    - imports: https://cnb.cool/pvzcs/envs/-/blob/main/env.yml
+      stages:
+        - name: 构建当前项目
+          image: node:20
+          script: npm install -g pnpm && pnpm i && pnpm run docs:build
+        - name: 部署到Pages
+          image: node:20
+          script: npx edgeone pages deploy ./.vitepress/dist --name img-w3c-cool --token $EDGEONE_PAGES_API_TOKEN
