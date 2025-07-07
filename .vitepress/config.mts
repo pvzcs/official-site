@@ -19,7 +19,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "首页", link: "/" },
-      { text: "社团信息", link: "/社团信息/人员表" },
+      { text: "社团信息", link: "/society-info/members" },
     ],
     logo: "/logo.png",
     siteTitle: "植创社",
