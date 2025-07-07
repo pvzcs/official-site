@@ -1,9 +1,8 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 import { defineTeekConfig } from "vitepress-theme-teek/config";
 
 const teekConfig = defineTeekConfig({
   teekTheme: true,
-
 });
 
 // https://vitepress.dev/reference/site-config
@@ -13,8 +12,11 @@ export default defineConfig({
     "植创社成立于2025年3月，植根PvZ社区，服务PvZ同人创作，挖掘PvZ文化深度，建设PvZ文化符号",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: "首页", link: "/" }],
-    logo: '/logo.png',
+    nav: [
+      { text: "首页", link: "/" },
+      { text: "社团信息", link: "/info/members" },
+    ],
+    logo: "/logo.png",
     siteTitle: "植创社",
   },
   extends: teekConfig,
