@@ -1,8 +1,13 @@
 import { defineConfig } from "vitepress";
 import { defineTeekConfig } from "vitepress-theme-teek/config";
 
+import Permalink from "vitepress-plugin-permalink";
+
 const teekConfig = defineTeekConfig({
   teekTheme: true,
+  vite: {
+    plugins: [Permalink(/* options */)],
+  },
 });
 
 // https://vitepress.dev/reference/site-config
