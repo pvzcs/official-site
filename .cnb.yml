@@ -4,7 +4,7 @@ main:
       stages:
         - name: 构建当前项目
           image: node:20
-          script: npm install -g pnpm && pnpm i && pnpm run docs:build
+          script: npm install -g pnpm && pnpm i && pnpm vitepress build
         - name: 部署到Pages
           image: node:20
           script: npx edgeone pages deploy ./.vitepress/dist --name zcs-site --token $EDGEONE_PAGES_API_TOKEN
