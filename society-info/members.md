@@ -308,7 +308,7 @@ article: false
   badge: 2025/5/22
   badgeType: tip
 - name: CW狂风
-  desc: 剪辑组、音乐组成员
+  desc: 音乐组成员
   link: https://space.bilibili.com/434800565
   img: /members/51.webp
   badge: 2025/6/2
