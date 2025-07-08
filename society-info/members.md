@@ -95,11 +95,71 @@ article: false
   img: /members/14.webp
   badge: 2025/3/3
   badgeType: tip
+- name: 贩剑的幻剑
+  desc: 音乐组成员
+  link: https://space.bilibili.com/3493129921498027
+  img: /members/19.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: 究极无力猫
+  desc: 音乐组成员
+  link: https://space.bilibili.com/174567629
+  img: /members/20.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: Kingh-J
+  desc: 音乐组成员
+  link: https://space.bilibili.com/483887319
+  img: /members/21.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: 京城小仙z
+  desc: 音乐组成员
+  link: https://space.bilibili.com/455298905
+  img: /members/22.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: 凉沈
+  desc: 剪辑组成员
+  link: https://space.bilibili.com/3493115379845729
+  img: /members/25.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: Winkle雪线
+  desc: 剪辑组成员
+  link: https://space.bilibili.com/2198423
+  img: /members/27.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: 无名的路人_
+  desc: 剪辑组成员
+  link: https://space.bilibili.com/424444828
+  img: /members/28.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: YC_Xiaoxuan
+  desc: 策划组、剪辑组成员
+  link: https://space.bilibili.com/348675218
+  img: /members/29.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: UPU4U7
+  desc: 剪辑组成员
+  link: https://space.bilibili.com/21522074
+  img: /members/26.webp
+  badge: 2025/3/10
+  badgeType: tip
 - name: 叶冰
   desc: 美术组成员
   link: https://space.bilibili.com/282155421
   img: /members/15.webp
   badge: 2025/3/13
+  badgeType: tip
+- name: Bayant白蚁
+  desc: 剪辑组成员
+  link: https://space.bilibili.com/1394824931
+  img: /members/24.webp
+  badge: 2025/3/17
   badgeType: tip
 - name: Error博士
   desc: 美术组、文案组成员
@@ -117,6 +177,18 @@ article: false
   desc: 美术组成员
   link: https://space.bilibili.com/3493274358647618
   img: /members/18.webp
+  badge: 2025/3/30
+  badgeType: tip
+- name: 塔瑗
+  desc: 音乐组成员
+  link: https://space.bilibili.com/433509436
+  img: /members/23.webp
+  badge: 2025/3/30
+  badgeType: tip
+- name: 阿风的独白
+  desc: 剪辑组成员
+  link: https://space.bilibili.com/1445711840
+  img: /members/30.webp
   badge: 2025/3/30
   badgeType: tip
 ```
