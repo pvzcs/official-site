@@ -47,5 +47,29 @@ article: false
   img: /members/6.webp
   badge: 2025/3/3
   badgeType: tip
+- name: 4573去
+  desc: 似乎来到了一片没有知识的荒原
+  link: https://space.bilibili.com/687147559
+  img: /members/7.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: DoJu-豆君
+  desc: 美术组成员
+  link: https://space.bilibili.com/558457083
+  img: /members/8.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: ydd_GiGi
+  desc: 美术组成员
+  link: https://space.bilibili.com/178966180
+  img: /members/9.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: 请假委员
+  desc: 美术组成员
+  link: https://space.bilibili.com/400782204
+  img: /members/10.webp
+  badge: 2025/3/3
+  badgeType: tip
 ```
 :::
