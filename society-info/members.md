@@ -71,5 +71,53 @@ article: false
   img: /members/10.webp
   badge: 2025/3/3
   badgeType: tip
+- name: 熔萤
+  desc: 美术组成员
+  link: https://space.bilibili.com/72317660
+  img: /members/11.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: smzase
+  desc: 美术组、剪辑组成员
+  link: https://space.bilibili.com/254587236
+  img: /members/12.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: s阳光s
+  desc: 美术组成员
+  link: https://space.bilibili.com/86007460
+  img: /members/13.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: 香橼
+  desc: 美术组成员
+  link: https://space.bilibili.com/363399396
+  img: /members/14.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: 叶冰
+  desc: 美术组成员
+  link: https://space.bilibili.com/282155421
+  img: /members/15.webp
+  badge: 2025/3/13
+  badgeType: tip
+- name: Error博士
+  desc: 美术组、文案组成员
+  link: https://space.bilibili.com/90162971
+  img: /members/16.webp
+  badge: 2025/3/30
+  badgeType: tip
+- name: KevinMVZ
+  desc: 美术组成员
+  link: https://space.bilibili.com/3546888219397078
+  img: /members/17.webp
+  badge: 2025/3/30
+  badgeType: tip
+- name: 时空过客
+  desc: 美术组成员
+  link: https://space.bilibili.com/3493274358647618
+  img: /members/18.webp
+  badge: 2025/3/30
+  badgeType: tip
 ```
 :::
