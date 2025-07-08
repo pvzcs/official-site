@@ -5,7 +5,7 @@
       <input
         v-model="searchQuery"
         type="text"
-        placeholder="搜索成员昵称或所属组别..."
+        placeholder="搜索成员姓名或所属组别..."
         class="search-input"
       />
     </div>
@@ -40,11 +40,11 @@
       </span>
     </div>
 
-    <!-- 上方分页控件 -->
+    <!-- 顶部分页控件 -->
     <div v-if="totalPages > 1" class="pagination pagination-top">
       <button
-        @click="changePage(1)"
-        :disabled="currentPage === 1 || isAnimating"
+        @click="currentPage = 1"
+        :disabled="currentPage === 1"
         class="page-btn"
         title="首页"
       >
@@ -52,8 +52,8 @@
       </button>
       
       <button
-        @click="changePage(currentPage - 1)"
-        :disabled="currentPage === 1 || isAnimating"
+        @click="currentPage--"
+        :disabled="currentPage === 1"
         class="page-btn"
         title="上一页"
       >
@@ -63,8 +63,7 @@
       <template v-for="page in visiblePages" :key="page">
         <button
           v-if="page !== '...'"
-          @click="typeof page === 'number' ? changePage(page) : null"
-          :disabled="isAnimating"
+          @click="currentPage = typeof page === 'number' ? page : currentPage"
           :class="['page-btn', { active: currentPage === page }]"
         >
           {{ page }}
@@ -73,8 +72,8 @@
       </template>
 
       <button
-        @click="changePage(currentPage + 1)"
-        :disabled="currentPage === totalPages || isAnimating"
+        @click="currentPage++"
+        :disabled="currentPage === totalPages"
         class="page-btn"
         title="下一页"
       >
@@ -82,8 +81,8 @@
       </button>
       
       <button
-        @click="changePage(totalPages)"
-        :disabled="currentPage === totalPages || isAnimating"
+        @click="currentPage = totalPages"
+        :disabled="currentPage === totalPages"
         class="page-btn"
         title="末页"
       >
@@ -97,11 +96,10 @@
 
     <!-- 成员展示 -->
     <div class="nav-card">
-      <div ref="cardGridRef" class="card-grid">
+      <div class="card-grid">
         <div
-          v-for="(member, index) in paginatedMembers"
-          :key="`${currentPage}-${member.name}`"
-          :ref="(el: any) => setCardRef(el as HTMLElement, index)"
+          v-for="member in paginatedMembers"
+          :key="member.name"
           class="card-item"
         >
           <a :href="member.link" target="_blank" class="card-link">
@@ -123,8 +121,8 @@
     <!-- 分页控件 -->
     <div v-if="totalPages > 1" class="pagination">
       <button
-        @click="changePage(1)"
-        :disabled="currentPage === 1 || isAnimating"
+        @click="currentPage = 1"
+        :disabled="currentPage === 1"
         class="page-btn"
         title="首页"
       >
@@ -132,8 +130,8 @@
       </button>
       
       <button
-        @click="changePage(currentPage - 1)"
-        :disabled="currentPage === 1 || isAnimating"
+        @click="currentPage--"
+        :disabled="currentPage === 1"
         class="page-btn"
         title="上一页"
       >
@@ -143,8 +141,7 @@
       <template v-for="page in visiblePages" :key="page">
         <button
           v-if="page !== '...'"
-          @click="typeof page === 'number' ? changePage(page) : null"
-          :disabled="isAnimating"
+          @click="currentPage = typeof page === 'number' ? page : currentPage"
           :class="['page-btn', { active: currentPage === page }]"
         >
           {{ page }}
@@ -153,8 +150,8 @@
       </template>
 
       <button
-        @click="changePage(currentPage + 1)"
-        :disabled="currentPage === totalPages || isAnimating"
+        @click="currentPage++"
+        :disabled="currentPage === totalPages"
         class="page-btn"
         title="下一页"
       >
@@ -162,8 +159,8 @@
       </button>
       
       <button
-        @click="changePage(totalPages)"
-        :disabled="currentPage === totalPages || isAnimating"
+        @click="currentPage = totalPages"
+        :disabled="currentPage === totalPages"
         class="page-btn"
         title="末页"
       >
@@ -178,8 +175,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch, nextTick, onMounted } from 'vue'
-import { animate, stagger } from 'motion'
+import { ref, computed, watch } from 'vue'
 
 interface Member {
   name: string
@@ -198,19 +194,7 @@ const props = defineProps<{
 const searchQuery = ref('')
 const selectedGroup = ref('')
 const currentPage = ref(1)
-const pageSize = ref(10)
-
-// 动画相关的引用
-const cardGridRef = ref<HTMLElement>()
-const cardRefs = ref<(HTMLElement | null)[]>([])
-const isAnimating = ref(false)
-
-// 设置卡片引用
-const setCardRef = (el: HTMLElement | null, index: number) => {
-  if (el && el instanceof HTMLElement) {
-    cardRefs.value[index] = el
-  }
-}
+const pageSize = ref(20)
 
 // 解析成员数据中的组别信息
 const uniqueGroups = computed(() => {
@@ -303,103 +287,16 @@ const visiblePages = computed(() => {
   return pages
 })
 
-// 动画函数
-const animateCards = async () => {
-  if (isAnimating.value || !cardGridRef.value) return
-  
-  isAnimating.value = true
-  
-  // 获取所有卡片元素
-  const cards = cardRefs.value.filter(Boolean)
-  
-  if (cards.length === 0) {
-    isAnimating.value = false
-    return
-  }
-  
-  // 先隐藏所有卡片
-  cards.forEach(card => {
-    if (card) {
-      card.style.opacity = '0'
-      card.style.transform = 'translateY(20px) scale(0.95)'
-    }
-  })
-  
-  // 等待下一帧
-  await nextTick()
-  
-  // 使用stagger动画依次显示卡片
-  await animate(
-    cards,
-    {
-      opacity: [0, 1],
-      transform: ['translateY(20px) scale(0.95)', 'translateY(0px) scale(1)']
-    },
-    {
-      duration: 0.1,
-      delay: stagger(0.01)
-    }
-  )
-  
-  isAnimating.value = false
-}
-
-// 页面切换动画
-const changePage = async (newPage: number) => {
-  if (isAnimating.value || newPage === currentPage.value) return
-  
-  // 先执行退出动画
-  const cards = cardRefs.value.filter(Boolean)
-  if (cards.length > 0) {
-    await animate(
-      cards,
-      {
-        opacity: [1, 0],
-        transform: ['translateY(0px) scale(1)', 'translateY(-10px) scale(0.98)']
-      },
-      {
-        duration: 0.1,
-        delay: stagger(0.01)
-      }
-    )
-  }
-  
-  // 更新页面
-  currentPage.value = newPage
-  
-  // 等待DOM更新
-  await nextTick()
-  
-  // 执行进入动画
-  await animateCards()
-}
-
 // 监听筛选条件变化，重置到第一页
-watch([searchQuery, selectedGroup, pageSize], async () => {
-  if (currentPage.value !== 1) {
-    currentPage.value = 1
-  }
-}, { flush: 'sync' })
+watch([searchQuery, selectedGroup, pageSize], () => {
+  currentPage.value = 1
+})
 
 // 监听总页数变化，确保当前页不超过范围
-watch(totalPages, async (newTotal) => {
+watch(totalPages, (newTotal) => {
   if (currentPage.value > newTotal && newTotal > 0) {
     currentPage.value = newTotal
   }
-}, { flush: 'sync' })
-
-// 监听分页成员变化，触发动画
-watch(paginatedMembers, async () => {
-  if (!isAnimating.value) {
-    await nextTick()
-    await animateCards()
-  }
-}, { flush: 'post' })
-
-// 组件挂载后执行初始动画
-onMounted(async () => {
-  await nextTick()
-  await animateCards()
 })
 
 // 暴露给父组件的方法
@@ -506,9 +403,7 @@ defineExpose({
 }
 
 .nav-card {
-  display: grid;
   margin-bottom: 3rem;
-  align-items: center;
 }
 
 .card-grid {
@@ -648,11 +543,6 @@ defineExpose({
 .page-btn:disabled {
   opacity: 0.4;
   cursor: not-allowed;
-  pointer-events: none;
-}
-
-.page-btn:disabled:hover {
-  transform: none;
 }
 
 .page-ellipsis {
@@ -717,8 +607,8 @@ defineExpose({
   }
   
   .pagination-top {
-    padding: 0.75rem;
     margin: 1rem 0 1.5rem 0;
+    padding: 0.75rem;
   }
   
   .page-btn {
@@ -815,8 +705,8 @@ defineExpose({
   }
   
   .pagination-top {
-    padding: 0.5rem;
     margin: 0.75rem 0 1rem 0;
+    padding: 0.5rem;
     flex-direction: column;
   }
   

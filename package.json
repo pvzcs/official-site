@@ -13,7 +13,6 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
-    "motion": "^12.23.0",
     "vitepress-plugin-permalink": "^1.1.2"
   }
 }
