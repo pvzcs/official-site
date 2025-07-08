@@ -5,7 +5,7 @@
       <input
         v-model="searchQuery"
         type="text"
-        placeholder="搜索成员姓名或所属组别..."
+        placeholder="搜索成员昵称或所属组别..."
         class="search-input"
       />
     </div>
