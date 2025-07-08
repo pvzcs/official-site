@@ -64,11 +64,21 @@
         <button
           v-if="page !== '...'"
           @click="currentPage = typeof page === 'number' ? page : currentPage"
-          :class="['page-btn', { active: currentPage === page }]"
+          :class="['page-btn', 'page-btn-desktop', { active: currentPage === page }]"
         >
           {{ page }}
         </button>
-        <span v-else class="page-ellipsis">...</span>
+        <span v-else class="page-ellipsis page-ellipsis-desktop">...</span>
+      </template>
+
+      <!-- 移动端简化分页 -->
+      <template v-for="page in mobileVisiblePages" :key="`mobile-${page}`">
+        <button
+          @click="currentPage = typeof page === 'number' ? page : currentPage"
+          :class="['page-btn', 'page-btn-mobile', { active: currentPage === page }]"
+        >
+          {{ page }}
+        </button>
       </template>
 
       <button
@@ -142,11 +152,21 @@
         <button
           v-if="page !== '...'"
           @click="currentPage = typeof page === 'number' ? page : currentPage"
-          :class="['page-btn', { active: currentPage === page }]"
+          :class="['page-btn', 'page-btn-desktop', { active: currentPage === page }]"
         >
           {{ page }}
         </button>
-        <span v-else class="page-ellipsis">...</span>
+        <span v-else class="page-ellipsis page-ellipsis-desktop">...</span>
+      </template>
+
+      <!-- 移动端简化分页 -->
+      <template v-for="page in mobileVisiblePages" :key="`mobile-${page}`">
+        <button
+          @click="currentPage = typeof page === 'number' ? page : currentPage"
+          :class="['page-btn', 'page-btn-mobile', { active: currentPage === page }]"
+        >
+          {{ page }}
+        </button>
       </template>
 
       <button
@@ -284,6 +304,25 @@ const visiblePages = computed(() => {
     pages.push(total)
   }
 
+  return pages
+})
+
+// 计算属性：移动端简化的页码
+const mobileVisiblePages = computed(() => {
+  const current = currentPage.value
+  const total = totalPages.value
+  
+  // 移动端只显示当前页和相邻页
+  const pages: (number | string)[] = []
+  
+  // 只显示当前页前后各1页，最多3个页码
+  const start = Math.max(1, current - 1)
+  const end = Math.min(total, current + 1)
+  
+  for (let i = start; i <= end; i++) {
+    pages.push(i)
+  }
+  
   return pages
 })
 
@@ -562,6 +601,16 @@ defineExpose({
   border: 1px solid var(--vp-c-border);
 }
 
+/* 默认显示桌面版分页，隐藏移动版 */
+.page-btn-mobile {
+  display: none;
+}
+
+.page-btn-desktop,
+.page-ellipsis-desktop {
+  display: inline-block;
+}
+
 /* 响应式设计 */
 @media (max-width: 768px) {
   .card-grid {
@@ -698,35 +747,49 @@ defineExpose({
   }
   
   .pagination {
-    gap: 0.25rem;
-    padding: 0.75rem;
-    margin: 1.5rem 0 1rem 0;
-    flex-direction: column;
-  }
-  
-  .pagination-top {
-    margin: 0.75rem 0 1rem 0;
+    gap: 0.4rem;
     padding: 0.5rem;
-    flex-direction: column;
-  }
-  
-  .pagination > div:first-child {
-    display: flex;
-    gap: 0.25rem;
+    margin: 1rem 0 0.75rem 0;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
   
+  .pagination-top {
+    margin: 0.5rem 0 0.75rem 0;
+    padding: 0.4rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* 隐藏桌面版分页，显示移动版 */
+  .page-btn-desktop,
+  .page-ellipsis-desktop {
+    display: none;
+  }
+  
+  .page-btn-mobile {
+    display: inline-block;
+  }
+  
   .page-btn {
-    padding: 0.4rem 0.6rem;
-    font-size: 0.8rem;
-    min-width: 36px;
+    padding: 0.35rem 0.5rem;
+    font-size: 0.75rem;
+    min-width: 32px;
+    flex-shrink: 0;
+    border-radius: 4px;
   }
   
   .page-info {
-    margin: 0.75rem 0 0 0;
-    font-size: 0.8rem;
-    padding: 0.3rem 0.6rem;
+    width: 100%;
+    margin: 0.4rem 0 0 0;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    order: 10;
+    background: var(--vp-c-bg);
+    border-radius: 4px;
   }
 }
 </style>
