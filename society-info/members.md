@@ -143,6 +143,18 @@ article: false
   img: /members/29.webp
   badge: 2025/3/3
   badgeType: tip
+- name: 道源君-Tao
+  desc: 似乎来到了一片没有知识的荒原
+  link: https://space.bilibili.com/517412429
+  img: /members/31.webp
+  badge: 2025/3/3
+  badgeType: tip
+- name: 玉米卷加麻加辣
+  desc: 似乎来到了一片没有知识的荒原
+  link: https://space.bilibili.com/3546782250305709
+  img: /members/32.webp
+  badge: 2025/3/3
+  badgeType: tip
 - name: UPU4U7
   desc: 剪辑组成员
   link: https://space.bilibili.com/21522074
@@ -190,6 +202,60 @@ article: false
   link: https://space.bilibili.com/1445711840
   img: /members/30.webp
   badge: 2025/3/30
+  badgeType: tip
+- name: Dr・糕萌酸钾-Studio
+  desc: 音乐组成员
+  link: https://space.bilibili.com/406951972
+  img: /members/33.webp
+  badge: 2025/4/19
+  badgeType: tip
+- name: 星苗织光
+  desc: 文案组成员
+  link: https://space.bilibili.com/535934801
+  img: /members/34.webp
+  badge: 2025/4/19
+  badgeType: tip
+- name: 这是一杯热红茶
+  desc: 文案组成员
+  link: https://space.bilibili.com/604606856
+  img: /members/35.webp
+  badge: 2025/4/19
+  badgeType: tip
+- name: 雨痕い
+  desc: 剪辑组成员
+  link: https://space.bilibili.com/171910754
+  img: /members/36.webp
+  badge: 2025/5/2
+  badgeType: tip
+- name: 自由三叶草
+  desc: 音乐组成员
+  link: https://space.bilibili.com/1297262520
+  img: /members/37.webp
+  badge: 2025/5/2
+  badgeType: tip
+- name: 一条蟒老师
+  desc: 音乐组成员
+  link: https://space.bilibili.com/661523647
+  img: /members/38.webp
+  badge: 2025/5/2
+  badgeType: tip
+- name: 床单妖怪
+  desc: 美术组成员
+  link: https://space.bilibili.com/1517679584
+  img: /members/39.webp
+  badge: 2025/5/2
+  badgeType: tip
+- name: BetaBeast
+  desc: 美术组、剪辑组成员
+  link: https://space.bilibili.com/210379574
+  img: /members/40.webp
+  badge: 2025/5/2
+  badgeType: tip
+- name: 649hdb
+  desc: 音乐组成员
+  link: https://space.bilibili.com/110899573
+  img: /members/41.webp
+  badge: 2025/5/3
   badgeType: tip
 ```
 :::
