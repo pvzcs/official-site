@@ -9,7 +9,7 @@ article: false
 const membersData = [
   {
     name: "ji233",
-    desc: "管理组、策划组成员，账号运营，社团负责人",
+    desc: "管理组、策划组成员，社长",
     link: "https://space.bilibili.com/3546810693979019",
     img: "/members/1.webp",
     badge: "2025/3/3",
