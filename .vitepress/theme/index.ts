@@ -6,6 +6,7 @@ import "./style.css";
 import "vitepress-theme-teek/index.css";
 import "./style/var.css";
 
+
 export default {
   extends: Teek,
 } satisfies Theme;
