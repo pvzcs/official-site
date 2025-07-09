@@ -218,15 +218,7 @@ const pageSize = ref(20)
 
 // 解析成员数据中的组别信息
 const uniqueGroups = computed(() => {
-  const groups = new Set<string>()
-  props.membersData.forEach(member => {
-    const desc = member.desc
-    const groupMatches = desc.match(/(管理组|策划组|美术组|音乐组|剪辑组|文案组)/g)
-    if (groupMatches) {
-      groupMatches.forEach(group => groups.add(group))
-    }
-  })
-  return Array.from(groups).sort()
+  return ["管理组","策划组","美术组","音乐组","剪辑组","文案组"]
 })
 
 // 计算属性：过滤后的成员
