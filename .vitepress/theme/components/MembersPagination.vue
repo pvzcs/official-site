@@ -348,18 +348,18 @@ defineExpose({
 }
 
 .search-box {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
 }
 
 .search-input {
   width: 100%;
-  max-width: 500px;
-  padding: 0.75rem 1.25rem;
+  max-width: 400px;
+  padding: 0.5rem 1rem;
   border: 1px solid var(--vp-c-border);
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
   background: var(--vp-c-bg);
   color: var(--vp-c-text-1);
   transition: all 0.2s ease;
@@ -375,23 +375,23 @@ defineExpose({
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 0.75rem;
   background: var(--vp-c-bg-soft);
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid var(--vp-c-divider);
 }
 
 .filter-item {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .filter-box label {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: var(--vp-c-text-1);
   font-weight: 500;
   white-space: nowrap;
@@ -399,13 +399,13 @@ defineExpose({
 
 .group-filter,
 .page-size-selector {
-  padding: 0.5rem 0.75rem;
+  padding: 0.4rem 0.6rem;
   border: 1px solid var(--vp-c-border);
-  border-radius: 6px;
+  border-radius: 4px;
   background: var(--vp-c-bg);
   color: var(--vp-c-text-1);
-  font-size: 0.9rem;
-  min-width: 120px;
+  font-size: 0.85rem;
+  min-width: 100px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -423,13 +423,13 @@ defineExpose({
 }
 
 .stats {
-  margin-bottom: 2rem;
-  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
   color: var(--vp-c-text-2);
   text-align: center;
-  padding: 0.75rem;
+  padding: 0.5rem;
   background: var(--vp-c-bg-alt);
-  border-radius: 6px;
+  border-radius: 4px;
   border-left: 3px solid var(--vp-c-brand-1);
 }
 
@@ -529,32 +529,32 @@ defineExpose({
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
-  margin: 3rem 0 2rem 0;
+  gap: 0.5rem;
+  margin: 2rem 0 1.5rem 0;
   flex-wrap: wrap;
-  padding: 1.5rem;
+  padding: 1rem;
   background: var(--vp-c-bg-soft);
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid var(--vp-c-divider);
 }
 
 .pagination-top {
-  margin: 1.5rem 0 2rem 0;
-  padding: 1rem;
+  margin: 1rem 0 1.5rem 0;
+  padding: 0.75rem;
   background: var(--vp-c-bg-alt);
   border: 1px solid var(--vp-c-border);
 }
 
 .page-btn {
-  padding: 0.6rem 0.9rem;
+  padding: 0.4rem 0.7rem;
   border: 1px solid var(--vp-c-border);
-  border-radius: 6px;
+  border-radius: 4px;
   background: var(--vp-c-bg);
   color: var(--vp-c-text-1);
   cursor: pointer;
   transition: all 0.2s ease;
-  font-size: 0.9rem;
-  min-width: 44px;
+  font-size: 0.85rem;
+  min-width: 36px;
   font-weight: 500;
 }
 
@@ -577,19 +577,19 @@ defineExpose({
 }
 
 .page-ellipsis {
-  padding: 0.6rem 0.3rem;
+  padding: 0.4rem 0.25rem;
   color: var(--vp-c-text-2);
   font-weight: 500;
 }
 
 .page-info {
-  margin-left: 1.5rem;
-  font-size: 0.9rem;
+  margin-left: 1rem;
+  font-size: 0.8rem;
   color: var(--vp-c-text-1);
   font-weight: 500;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.75rem;
   background: var(--vp-c-bg-alt);
-  border-radius: 6px;
+  border-radius: 4px;
   border: 1px solid var(--vp-c-border);
 }
 
@@ -671,17 +671,17 @@ defineExpose({
   }
   
   .search-box {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
   
   .search-input {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.9rem;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
   }
   
   .filter-box {
-    gap: 0.75rem;
-    padding: 0.5rem;
+    gap: 0.4rem;
+    padding: 0.4rem;
     flex-direction: column;
     align-items: stretch;
   }
@@ -690,25 +690,25 @@ defineExpose({
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 0.5rem;
+    gap: 0.4rem;
   }
   
   .filter-box label {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     text-align: center;
   }
   
   .group-filter,
   .page-size-selector {
     width: 100%;
-    padding: 0.5rem;
-    font-size: 0.8rem;
+    padding: 0.4rem;
+    font-size: 0.75rem;
   }
   
   .stats {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+    padding: 0.4rem;
+    font-size: 0.8rem;
   }
   
   .card-grid {
@@ -739,17 +739,17 @@ defineExpose({
   }
   
   .pagination {
-    gap: 0.4rem;
-    padding: 0.5rem;
-    margin: 1rem 0 0.75rem 0;
+    gap: 0.3rem;
+    padding: 0.4rem;
+    margin: 0.75rem 0 0.5rem 0;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
   
   .pagination-top {
-    margin: 0.5rem 0 0.75rem 0;
-    padding: 0.4rem;
+    margin: 0.4rem 0 0.5rem 0;
+    padding: 0.3rem;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -766,22 +766,22 @@ defineExpose({
   }
   
   .page-btn {
-    padding: 0.35rem 0.5rem;
-    font-size: 0.75rem;
-    min-width: 32px;
+    padding: 0.3rem 0.4rem;
+    font-size: 0.7rem;
+    min-width: 28px;
     flex-shrink: 0;
-    border-radius: 4px;
+    border-radius: 3px;
   }
   
   .page-info {
     width: 100%;
-    margin: 0.4rem 0 0 0;
-    font-size: 0.75rem;
-    padding: 0.25rem 0.5rem;
+    margin: 0.3rem 0 0 0;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
     text-align: center;
     order: 10;
     background: var(--vp-c-bg);
-    border-radius: 4px;
+    border-radius: 3px;
   }
 }
 </style>
