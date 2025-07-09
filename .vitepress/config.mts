@@ -24,9 +24,8 @@ export default defineConfig({
     sidebar: {
       "/society-info/": {
         base: "/society-info/",
-        items: [
-          { text: "人员表", link: "members" },]
-      }
+        items: [{ text: "成员", link: "members" }],
+      },
     },
     logo: "/logo.png",
     siteTitle: "植创社",
