@@ -20,11 +20,16 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "社团信息", link: "/society-info/members" },
+      { text: "加入我们", link: "/join-us/" },
     ],
     sidebar: {
       "/society-info/": {
         base: "/society-info/",
         items: [{ text: "成员", link: "members" }],
+      },
+      "/join-us/": {
+        base: "/join-us/",
+        items: [{ text: "加入我们", link: "index" }],
       },
     },
     logo: "/logo.png",
