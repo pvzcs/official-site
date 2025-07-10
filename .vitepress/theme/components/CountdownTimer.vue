@@ -206,6 +206,7 @@ onUnmounted(() => {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  width: 100%;
 }
 
 .countdown-container {
@@ -217,6 +218,7 @@ onUnmounted(() => {
   box-shadow: 0 4px 16px var(--vp-c-shadow);
   max-width: 600px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .countdown-title {
@@ -240,12 +242,15 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background: var(--vp-c-bg);
   border: 1px solid var(--vp-c-border);
   border-radius: 8px;
   padding: 0.75rem 1rem;
   min-width: 70px;
   box-shadow: 0 2px 8px var(--vp-c-shadow);
+  transition: all 0.2s ease;
+  box-sizing: border-box;
 }
 
 .time-value {
@@ -302,69 +307,272 @@ onUnmounted(() => {
 
 /* 响应式设计 */
 @media (max-width: 768px) {
+  .countdown-timer {
+    padding: 0.5rem;
+  }
+  
   .countdown-container {
-    padding: 1.5rem;
-    margin: 0 1rem;
+    padding: 1.25rem;
+    margin: 0 0.5rem;
+    border-radius: 10px;
+    max-width: 100%;
   }
   
   .countdown-title {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+  
+  .countdown-display {
+    gap: 0.375rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .time-unit {
+    padding: 0.5rem 0.625rem;
+    min-width: 58px;
+    border-radius: 6px;
+  }
+  
+  .time-value {
+    font-size: 1.4rem;
+  }
+  
+  .time-label {
+    font-size: 0.65rem;
+    margin-top: 0.2rem;
+  }
+  
+  .time-separator {
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+    margin: 0 0.15rem;
+  }
+  
+  .countdown-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .countdown-timer {
+    padding: 0.25rem;
+  }
+  
+  .countdown-container {
+    padding: 1rem;
+    margin: 0 0.25rem;
+    border-radius: 8px;
+  }
+  
+  .countdown-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
   }
   
   .countdown-display {
     gap: 0.25rem;
+    margin-bottom: 0.5rem;
   }
   
   .time-unit {
-    padding: 0.5rem 0.75rem;
-    min-width: 60px;
+    padding: 0.4rem 0.5rem;
+    min-width: 52px;
+    border-radius: 5px;
   }
   
   .time-value {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   
   .time-label {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   
   .time-separator {
-    font-size: 1.25rem;
-    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    margin: 0 0.1rem;
+    margin-top: 0.3rem;
   }
 }
 
 @media (max-width: 480px) {
+  .countdown-timer {
+    padding: 0.125rem;
+  }
+  
   .countdown-container {
-    padding: 1rem;
+    padding: 0.75rem;
+    margin: 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px var(--vp-c-shadow);
   }
   
   .countdown-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
   }
   
   .countdown-display {
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-direction: row;
+    gap: 0.2rem;
+    margin-bottom: 0.5rem;
+    justify-content: space-around;
+    flex-wrap: nowrap;
   }
   
   .time-separator {
-    display: none;
+    display: block;
+    font-size: 1rem;
+    margin: 0 0.05rem;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
   }
   
   .time-unit {
-    min-width: 80px;
-    padding: 0.75rem;
+    min-width: 45px;
+    padding: 0.35rem 0.4rem;
+    border-radius: 4px;
+    flex: 1;
+    max-width: 60px;
   }
   
   .time-value {
-    font-size: 1.75rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .time-label {
+    font-size: 0.55rem;
+    margin-top: 0.15rem;
   }
   
   .expired-message {
-    font-size: 1.1rem;
-    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+  }
+  
+  .countdown-expired {
+    padding: 1rem 0.5rem;
+  }
+  
+  .countdown-footer {
+    margin-top: 0.75rem;
+    padding-top: 0.5rem;
+  }
+  
+  .countdown-description {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 360px) {
+  .countdown-container {
+    padding: 0.5rem;
+  }
+  
+  .countdown-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .countdown-display {
+    gap: 0.15rem;
+  }
+  
+  .time-unit {
+    min-width: 40px;
+    padding: 0.3rem 0.35rem;
+    max-width: 55px;
+  }
+  
+  .time-value {
+    font-size: 1rem;
+  }
+  
+  .time-label {
+    font-size: 0.5rem;
+  }
+  
+  .time-separator {
+    font-size: 0.9rem;
+    margin: 0 0.03rem;
+    margin-top: 0.2rem;
+  }
+  
+  .expired-message {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.75rem;
+  }
+  
+  .countdown-description {
+    font-size: 0.75rem;
+  }
+}
+
+/* 极小屏幕优化 */
+@media (max-width: 320px) {
+  .countdown-container {
+    padding: 0.4rem;
+    margin: 0;
+    border-radius: 4px;
+  }
+  
+  .countdown-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    word-break: break-word;
+  }
+  
+  .countdown-display {
+    gap: 0.1rem;
+  }
+  
+  .time-unit {
+    min-width: 35px;
+    padding: 0.25rem 0.3rem;
+    max-width: 50px;
+    border-radius: 3px;
+  }
+  
+  .time-value {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  
+  .time-label {
+    font-size: 0.45rem;
+    margin-top: 0.1rem;
+  }
+  
+  .time-separator {
+    font-size: 0.8rem;
+    margin: 0 0.02rem;
+    margin-top: 0.15rem;
+  }
+  
+  .expired-message {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.5rem;
+    word-break: break-word;
+  }
+  
+  .countdown-expired {
+    padding: 0.5rem 0.25rem;
+  }
+  
+  .countdown-footer {
+    margin-top: 0.5rem;
+    padding-top: 0.3rem;
+  }
+  
+  .countdown-description {
+    font-size: 0.7rem;
+    word-break: break-word;
   }
 }
 
