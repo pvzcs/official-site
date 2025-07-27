@@ -550,6 +550,14 @@ const membersData = [
     img: "/members/68.webp",
     badge: "2025/7/5",
     badgeType: "tip"
+  },
+  {
+    name: "DIE_MAN",
+    desc: "美术组成员",
+    link: "https://space.bilibili.com/352037262",
+    img: "/members/69.webp",
+    badge: "2025/7/27",
+    badgeType: "tip"
   }
 ];
 </script>
