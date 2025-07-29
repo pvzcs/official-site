@@ -558,6 +558,22 @@ const membersData = [
     img: "/members/69.webp",
     badge: "2025/7/27",
     badgeType: "tip"
+  },
+  {
+    name: "Coevrit克夫里特",
+    desc: "美术组成员",
+    link: "https://space.bilibili.com/3493115149159258",
+    img: "/members/70.webp",
+    badge: "2025/7/29",
+    badgeType: "tip"
+  },
+  {
+    name: "网友鬼顺爹",
+    desc: "美术组成员",
+    link: "https://space.bilibili.com/1584509558",
+    img: "/members/71.webp",
+    badge: "2025/7/29",
+    badgeType: "tip"
   }
 ];
 </script>
