@@ -588,7 +588,7 @@ const membersData = [
     desc: "美术组成员",
     link: "https://space.bilibili.com/1233067527",
     img: "/members/73.webp",
-    badge: "2025/7/30",
+    badge: "2025/8/1",
     badgeType: "tip"
   }
 ];
