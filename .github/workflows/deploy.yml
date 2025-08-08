@@ -1,27 +1,61 @@
 name: Deploy the Official Site
+
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+# Cancel previous in-flight deploys on the same branch to save quota.
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      NODE_ENV: production
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4
+
+      - name: Set up PNPM
+        uses: pnpm/action-setup@v3
+        with:
+          # Keep in sync with packageManager field in package.json (pnpm@10.11.0...)
+          version: 10.11.0
+          run_install: false
+
+      - name: Enable corepack (safety)
+        run: corepack enable
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4.4.0
+        uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          # Consider using an LTS (20) if 22 causes ecosystem issues.
+          node-version: 22
+          cache: 'pnpm'
+
+      - name: Install dependencies (frozen lockfile)
+        run: pnpm install --frozen-lockfile
 
       - name: Build the site
-        run: npm install -g pnpm && pnpm i && pnpm vitepress build
+        run: pnpm docs:build
+
+      # (Optional) Upload build as an artifact for debugging (uncomment if needed)
+      # - name: Upload build artifact
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: site-dist
+      #     path: ./.vitepress/dist
+      #     retention-days: 3
 
       - name: Deploy to EdgeOne Page
         uses: TencentEdgeOne/edgeone-pages-action@v1
         with:
           token: ${{ secrets.EDGEONE_API_TOKEN }}
-          project-name: "zcs-site"
-          build-path: "./.vitepress/dist"
+          project-name: zcs-site
+          build-path: ./.vitepress/dist
