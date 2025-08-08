@@ -598,6 +598,14 @@ const membersData = [
     img: "/members/74.webp",
     badge: "2025/8/8",
     badgeType: "tip"
+  },
+  {
+    name: "风起缘断MOON",
+    desc: "美术组成员",
+    link: "https://space.bilibili.com/3546895311964227",
+    img: "/members/75.webp",
+    badge: "2025/8/8",
+    badgeType: "tip"
   }
 ];
 </script>
