@@ -590,6 +590,14 @@ const membersData = [
     img: "/members/73.webp",
     badge: "2025/8/1",
     badgeType: "tip"
+  },
+  {
+    name: "Min_mozj",
+    desc: "美术组成员",
+    link: "https://space.bilibili.com/312078797",
+    img: "/members/74.webp",
+    badge: "2025/8/8",
+    badgeType: "tip"
   }
 ];
 </script>
