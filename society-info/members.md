@@ -606,6 +606,14 @@ const membersData = [
     img: "/members/75.webp",
     badge: "2025/8/8",
     badgeType: "tip"
+  },
+  {
+    name: "InkArcticfox",
+    desc: "美术组、剪辑组成员",
+    link: "https://space.bilibili.com/1761648811",
+    img: "/members/76.webp",
+    badge: "2025/8/10",
+    badgeType: "tip"
   }
 ];
 </script>
