@@ -458,7 +458,7 @@ const membersData = [
   {
     name: "E杯芒果奶昔",
     desc: "文案组成员",
-    link: "https://space.bilibili.com/5610051",
+    link: "https://space.bilibili.com/1915419018",
     img: "/members/57.webp",
     badge: "2025/6/11",
     badgeType: "tip"
