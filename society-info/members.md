@@ -513,7 +513,7 @@ const membersData = [
   },
   {
     name: "Ralsei-Toe",
-    desc: "策划组成员",
+    desc: "策划组、剪辑组成员",
     link: "https://space.bilibili.com/387367841",
     img: "/members/64.webp",
     badge: "2025/6/29",
@@ -613,6 +613,14 @@ const membersData = [
     link: "https://space.bilibili.com/1761648811",
     img: "/members/76.webp",
     badge: "2025/8/10",
+    badgeType: "tip"
+  },
+  {
+    name: "蓝受der瓜皮",
+    desc: "美术组成员",
+    link: "https://space.bilibili.com/531188676",
+    img: "/members/77.webp",
+    badge: "2025/8/19",
     badgeType: "tip"
   }
 ];
