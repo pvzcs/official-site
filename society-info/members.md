@@ -622,6 +622,14 @@ const membersData = [
     img: "/members/77.webp",
     badge: "2025/8/19",
     badgeType: "tip"
+  },
+  {
+    name: "沙雕的豌豆荚",
+    desc: "美术组成员",
+    link: "https://space.bilibili.com/2051874445",
+    img: "/members/78.webp",
+    badge: "2025/8/24",
+    badgeType: "tip"
   }
 ];
 </script>
