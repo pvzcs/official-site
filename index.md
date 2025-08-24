@@ -30,6 +30,6 @@ features:
     details: 通过共同的努力，最终将会创造出一个良性的、开放的、有凝聚力的 PvZ 创作社区
   - icon: <TkIcon><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path fill="currentColor" d="M11 21L4 4l17 7l-6.265 2.685a2 2 0 0 0-1.05 1.05z" opacity="0.16"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 21L4 4l17 7l-6.265 2.685a2 2 0 0 0-1.05 1.05z"/></g></svg></TkIcon>
     title: 价值观
-    details: 开放、包容、公正、协作
+    details: 开放、包容、友善、协作
 ---
 
