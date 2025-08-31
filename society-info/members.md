@@ -552,6 +552,34 @@ const membersData = [
     img: "/members/78.webp",
     badge: "2025/8/24",
     badgeType: "tip"
+  },
+  {
+    name: "猪笑逗Steel",
+    link: "https://space.bilibili.com/599414428",
+    img: "/members/79.webp",
+    badge: "2025/8/25",
+    badgeType: "tip"
+  },
+  {
+    name: "耀星の小树根-Best",
+    link: "https://space.bilibili.com/1237731980",
+    img: "/members/80.webp",
+    badge: "2025/8/31",
+    badgeType: "tip"
+  },
+  {
+    name: "棒の骨",
+    link: "https://space.bilibili.com/1104777267",
+    img: "/members/81.webp",
+    badge: "2025/8/31",
+    badgeType: "tip"
+  }，
+  {
+    name: "廿中十土",
+    link: "https://space.bilibili.com/3546630974344124",
+    img: "/members/82.webp",
+    badge: "2025/8/31",
+    badgeType: "tip"
   }
 ];
 </script>
