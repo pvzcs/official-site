@@ -16,7 +16,7 @@
                 <input
                     v-model="searchQuery"
                     type="text"
-                    placeholder="搜索成员昵称或所属组别..."
+                    placeholder="搜索成员昵称..."
                     class="search-input"
                 />
                 <button
@@ -40,20 +40,6 @@
 
         <!-- 筛选选项 -->
         <div class="filter-box">
-            <div class="filter-item">
-                <label>按组别筛选：</label>
-                <select v-model="selectedGroup" class="group-filter">
-                    <option value="">全部</option>
-                    <option
-                        v-for="group in uniqueGroups"
-                        :key="group"
-                        :value="group"
-                    >
-                        {{ group }}
-                    </option>
-                </select>
-            </div>
-
             <div class="filter-item">
                 <label>每页显示：</label>
                 <select v-model="pageSize" class="page-size-selector">
@@ -83,7 +69,7 @@
                     >共
                     <strong>{{ filteredMembers.length }}</strong> 位成员</span
                 >
-                <span v-if="searchQuery || selectedGroup" class="stats-filter">
+                <span v-if="searchQuery" class="stats-filter">
                     (已筛选，总共 {{ membersData.length }} 位)
                 </span>
             </div>
@@ -206,7 +192,6 @@
                         </div>
                         <div class="card-content">
                             <h3 class="card-title">{{ member.name }}</h3>
-                            <p class="card-desc">{{ member.desc }}</p>
                             <div
                                 v-if="member.badge"
                                 class="card-badge"
@@ -330,7 +315,6 @@ import { ref, computed, watch } from "vue";
 
 interface Member {
     name: string;
-    desc: string;
     link: string;
     img: string;
     badge?: string;
@@ -343,14 +327,8 @@ const props = defineProps<{
 
 // 响应式数据
 const searchQuery = ref("");
-const selectedGroup = ref("");
 const currentPage = ref(1);
 const pageSize = ref(20);
-
-// 解析成员数据中的组别信息
-const uniqueGroups = computed(() => {
-    return ["管理组", "策划组", "美术组", "音乐组", "剪辑组", "文案组"];
-});
 
 // 计算属性：过滤后的成员
 const filteredMembers = computed(() => {
@@ -361,15 +339,7 @@ const filteredMembers = computed(() => {
         const query = searchQuery.value.toLowerCase();
         filtered = filtered.filter(
             (member) =>
-                member.name.toLowerCase().includes(query) ||
-                member.desc.toLowerCase().includes(query),
-        );
-    }
-
-    // 按组别过滤
-    if (selectedGroup.value) {
-        filtered = filtered.filter((member) =>
-            member.desc.includes(selectedGroup.value),
+                member.name.toLowerCase().includes(query),
         );
     }
 
@@ -489,7 +459,7 @@ const mobileVisiblePages = computed(() => {
 });
 
 // 监听筛选条件变化，重置到第一页
-watch([searchQuery, selectedGroup, pageSize], () => {
+watch([searchQuery, pageSize], () => {
     currentPage.value = 1;
 });
 
@@ -516,7 +486,6 @@ defineExpose({
     resetPagination: () => {
         currentPage.value = 1;
         searchQuery.value = "";
-        selectedGroup.value = "";
         jumpToPage.value = "";
     },
 });
@@ -675,7 +644,6 @@ defineExpose({
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.group-filter,
 .page-size-selector {
     padding: 0.6rem 1rem;
     border: 2px solid var(--vp-c-border);
@@ -690,14 +658,12 @@ defineExpose({
     font-weight: 500;
 }
 
-.group-filter:hover,
 .page-size-selector:hover {
     border-color: var(--vp-c-brand-1);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.group-filter:focus,
 .page-size-selector:focus {
     outline: none;
     border-color: var(--vp-c-brand-1);
@@ -943,20 +909,6 @@ defineExpose({
 
 .card-item:hover .card-title {
     color: var(--vp-c-brand-1);
-}
-
-.card-desc {
-    font-size: 0.8rem;
-    color: var(--vp-c-text-2);
-    margin: 0 0 0.5rem 0;
-    line-height: 1.4;
-    flex: 1;
-    word-break: break-word;
-    transition: color 0.2s ease;
-}
-
-.card-item:hover .card-desc {
-    color: var(--vp-c-text-1);
 }
 
 .card-badge {
@@ -1260,10 +1212,6 @@ defineExpose({
         margin-bottom: 0.3rem;
     }
 
-    .card-desc {
-        font-size: 0.75rem;
-    }
-
     .filter-box {
         flex-direction: column;
         align-items: flex-start;
@@ -1415,11 +1363,6 @@ defineExpose({
     .card-title {
         font-size: 1rem;
         margin-bottom: 0.4rem;
-    }
-
-    .card-desc {
-        font-size: 0.8rem;
-        margin-bottom: 0.5rem;
     }
 
     .card-badge {
