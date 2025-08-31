@@ -573,7 +573,7 @@ const membersData = [
     img: "/members/81.webp",
     badge: "2025/8/31",
     badgeType: "tip"
-  }，
+  },
   {
     name: "廿中十土",
     link: "https://space.bilibili.com/3546630974344124",
