@@ -594,6 +594,13 @@ const membersData = [
     img: "/members/84.webp",
     badge: "2025/9/1",
     badgeType: "tip"
+  },
+  {
+    name: "tashdi_zhfeng",
+    link: "https://space.bilibili.com/387790289",
+    img: "/members/85.webp",
+    badge: "2025/9/1",
+    badgeType: "tip"
   }
 ];
 </script>
