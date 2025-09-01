@@ -580,6 +580,13 @@ const membersData = [
     img: "/members/82.webp",
     badge: "2025/8/31",
     badgeType: "tip"
+  },
+  {
+    name: "w无名梨酱w",
+    link: "https://space.bilibili.com/1898535510",
+    img: "/members/83.webp",
+    badge: "2025/9/1",
+    badgeType: "tip"
   }
 ];
 </script>
