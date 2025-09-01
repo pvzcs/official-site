@@ -587,6 +587,13 @@ const membersData = [
     img: "/members/83.webp",
     badge: "2025/9/1",
     badgeType: "tip"
+  },
+  {
+    name: "Sky_死钙",
+    link: "https://space.bilibili.com/3546738098964867",
+    img: "/members/84.webp",
+    badge: "2025/9/1",
+    badgeType: "tip"
   }
 ];
 </script>
