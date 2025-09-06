@@ -601,6 +601,13 @@ const membersData = [
     img: "/members/85.webp",
     badge: "2025/9/1",
     badgeType: "tip"
+  },
+  {
+    name: "墨风少次",
+    link: "https://space.bilibili.com/3546379083319439",
+    img: "/members/86.webp",
+    badge: "2025/9/5",
+    badgeType: "tip"
   }
 ];
 </script>
